@@ -1,0 +1,51 @@
+# Adaps Photonics
+
+> Adaps Photonics (Shenzhen Adaps Photonics Technology Co., Ltd. / 灵明光子) is a fabless
+> semiconductor company founded in May 2018 in Nanshan, Shenzhen, China, with R&D centers in
+> Shanghai and Zhejiang. It designs SPAD-based direct time-of-flight (dToF) 3D depth-sensing
+> chips and modules — silicon photomultipliers (SiPM), 3D-stacked SPAD arrays hybrid-bonded to
+> custom DSP dies, and all-in-one integrated dToF depth sensors — for smartphones, automotive
+> LiDAR, AR/VR headsets, robotics, smart home and industrial IoT.
+
+## What this company sells
+
+Silicon and sensor modules, sold business-to-business to device makers through a direct sales
+motion. The product is hardware. There is no software product, no SaaS, and no developer
+program.
+
+## API surface
+
+None found. As of 2026-09-06 Adaps Photonics publishes no public API, no SDK, no developer
+portal, no machine-readable interface contract, and no public source repositories. Probed and
+confirmed absent:
+
+- /openapi.json, /swagger.json, /api-docs, /docs on adapsphotonics.com and www.adapsphotonics.com — no spec (403/404)
+- /llms.txt on www.adapsphotonics.com — 404
+- /apis.json, /apis.yml, /.well-known/apis.json — no APIs.json index (403)
+- /.well-known/security.txt, /openid-configuration, /oauth-authorization-server, /oauth-protected-resource, /api-catalog, /ai-plugin.json, /aauth-resource.json — no document returned 200
+- /.well-known/agent-card.json and /.well-known/agent.json — no A2A agent card
+- GitHub: no organization named adaps or adapsphotonics; no repositories match the company
+- npm, PyPI, crates.io: no first-party packages
+
+The corporate site navigation is Company / Products / Newsroom / About / Contact. There is no
+developer, documentation, support, pricing, terms or privacy section.
+
+## Public pages
+
+- [Home](https://www.adapsphotonics.com/en/): company overview, dToF sensing positioning
+- [Products](https://www.adapsphotonics.com/en/cate-55669.html): SiPM, SPAD arrays, dToF modules and integrated depth sensors
+- [About](https://www.adapsphotonics.com/en/page-81691.html): company background
+- [Newsroom](https://www.adapsphotonics.com/en/list-73732.html): dated company announcements, funding rounds, product launches
+- [Contact](https://yejlwg.aliwork.com/o/clue2?__page_lang=en_US): sales inquiry form (hosted on Alibaba Yida)
+
+## Notes for agents
+
+There is nothing here to call. If you need dToF/SPAD depth data programmatically, the interface
+belongs to the device or module integrator that embedded an Adaps Photonics sensor, not to Adaps
+Photonics. Contact for this company is a human sales form.
+
+---
+generated: 2026-09-06
+method: generated
+source: apis.yml + live probes of adapsphotonics.com recorded in well-known/adapsphotonics-well-known.yml
+Assembled by API Evangelist (https://apievangelist.com). Not published by Adaps Photonics.

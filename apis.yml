@@ -1,8 +1,17 @@
 aid: adapsphotonics
-name: Adapsphotonics
-description: 'Adapsphotonics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: Adaps Photonics
+description: 'Adaps Photonics (Shenzhen Adaps Photonics Technology Co., Ltd. / 灵明光子)
+  is a fabless semiconductor company founded in May 2018 in the Nanshan district of
+  Shenzhen, China, with R&D centers in Shanghai and Zhejiang. It designs single-photon
+  avalanche diode (SPAD) based direct time-of-flight (dToF) 3D depth-sensing chips and
+  modules — silicon photomultipliers (SiPM), 3D-stacked SPAD arrays hybrid-bonded to
+  custom DSP dies, and all-in-one integrated dToF depth sensors — for smartphones,
+  automotive LiDAR, AR/VR headsets, robotics, smart home and industrial IoT. The
+  company sells silicon and sensor modules to device makers through a direct sales
+  motion; it publishes no public API, SDK, developer portal or machine-readable
+  interface contract.'
 url: https://raw.githubusercontent.com/api-evangelist/adapsphotonics/refs/heads/main/apis.yml
+image: https://www.adapsphotonics.com/home/c/5/ifzufa/resource/2023/03/14/641049b289661.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,15 @@ created: '2026-09-06'
 modified: '2026-09-06'
 tags:
 - Company
+- Semiconductors
+- Sensors
+- Photonics
+- LiDAR
+- 3D Sensing
+- Chip Design
+- Automotive
+- Consumer Electronics
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/adapsphotonics-domain-security.yml
 - type: Website
+  url: https://www.adapsphotonics.com/en/
+- type: Solutions
+  url: https://www.adapsphotonics.com/en/cate-55669.html
+- type: About
+  url: https://www.adapsphotonics.com/en/page-81691.html
+- type: Newsroom
+  url: https://www.adapsphotonics.com/en/list-73732.html
+- type: Contact
+  url: https://yejlwg.aliwork.com/o/clue2?__page_lang=en_US
+- type: x-secondary-market
   url: https://equityzen.com/company/adapsphotonics
+- type: LLMsTxt
+  url: llms/adapsphotonics-llms.txt
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Adaps Photonics is a fabless SPAD/dToF depth-sensor chip designer selling silicon and
+    camera modules to device makers; its entire public site is a five-item marketing CMS
+    (Company / Products / Newsroom / About / Contact) with no developer, documentation,
+    download or support section, and its only contact channel is an Alibaba Yida sales form.
+  evidence:
+    - url: https://www.adapsphotonics.com/en/
+      status: 200
+    - url: https://www.adapsphotonics.com/llms.txt
+      status: 404
+    - url: https://www.adapsphotonics.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.adapsphotonics.com/openapi.json
+      status: 403
+    - url: https://api.github.com/orgs/adapsphotonics
+      status: 404
+  checked: '2026-09-06'
